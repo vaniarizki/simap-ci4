@@ -30,4 +30,19 @@ class BarangModel extends Model
       return $query;
     }
   }
+
+  public function getBarangByKategori($kategori)
+  {
+    $query = $this->table($this->table)->where('kategori', $kategori)->findAll();
+    return $query;
+  }
+
+  public function getBarangInWishlist($nim)
+  {
+    $db = \Config\Database::connect();
+
+    $query = $db->query('SELECT * FROM barang WHERE id_barang IN (SELECT id_barang FROM wishlist WHERE nim_user = "' . $nim . '")');
+    $results = $query->getResultArray();
+    return $results;
+  }
 }

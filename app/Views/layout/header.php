@@ -31,7 +31,7 @@
             <div class="help-r hidden-xs">
               <div class="nav-box">
                 <ul>
-                  <li><?= $nama; ?></li>
+                  <li><a href="/user/profil"><img class="h-i" src="/img/profil.png" alt="" /><?= $nama; ?></a></li>
                 </ul>
               </div>
             </div>
@@ -39,7 +39,6 @@
               <div class="nav-box">
                 <ul>
                   <li><a href="/user/barangsaya"><img class="h-i" src="/img/barang.png" alt="" />Barang Saya</a></li>
-                  <li><a href="/user/profil"><img class="h-i" src="/img/profil.png" alt="" />Profil Saya</a></li>
                 </ul>
               </div>
             </div>

@@ -31,7 +31,7 @@ class Barang extends Controller
       'nama' => $session->get('nama'),
     ];
 
-    return view('/user/barangsaya', $data);
+    return view('/user/barang', $data);
   }
 
   public function detail($id)

@@ -38,11 +38,10 @@ class Kategori extends Controller
     $data = [
       'title' => join(" ", array($kategori, '| SiMap STIS')),
       'kategori' => $this->kategoriModel->getKategori(),
-      'barang' => $this->barangModel->getBarang($kategori),
+      'barang' => $this->barangModel->getBarangByKategori($kategori),
       'nim' => $session->get('nim'),
       'nama' => $session->get('nama'),
     ];
-
-    return view('/user/kategori', $data);
+    return view('/user/barang', $data);
   }
 }

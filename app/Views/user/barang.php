@@ -92,7 +92,9 @@
                     </div>
                     <div class="dit-t clearfix">
                       <div class="left-ti">
-                        <h4><?= $b['nama']; ?></h4>
+                        <a href="/user/barang/<?= $b['id_barang']; ?>">
+                          <h4><?= $b['nama']; ?></h4>
+                        </a>
                         <p>By
                           <?php
                           $id = $b['id_penjual'];
@@ -109,8 +111,8 @@
                     </div>
                     <div class="prod-btn">
                       <a href="#"><i class="fa fa-star" aria-hidden="true"></i>Detail Barang</a>
-                      <a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Simpan ke wishlist</a>
-                      <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Chat Penjual</a>
+                      <a href="/user/wishlist/save/<?= $b['id_barang']; ?>"><i class="fa fa-heart" aria-hidden="true"></i>Simpan ke wishlist</a>
+                      <a href="#/user/chat/..."><i class="fa fa-comments" aria-hidden="true"></i>Chat Penjual</a>
                     </div>
                   </div>
                 </div>

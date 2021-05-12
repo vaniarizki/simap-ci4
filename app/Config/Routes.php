@@ -32,10 +32,13 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Welcome::index');
-$routes->get('/home', 'User\Home::index', ['filter' => 'auth']);
+$routes->get('/user/home', 'User\Home::index', ['filter' => 'auth']);
+$routes->get('/user/profil', 'User\Profil::index', ['filter' => 'auth']);
 $routes->get('/user/barangsaya', 'User\Barang::barangsaya', ['filter' => 'auth']);
 $routes->get('/user/barang/(:segment)', 'User\Barang::detail/$1', ['filter' => 'auth']);
-$routes->get('/kategori/(:segment)', 'User\Kategori::kategori/$1');
+$routes->get('/kategori/(:segment)', 'User\Kategori::kategori/$1', ['filter' => 'auth']);
+$routes->post('/user/wishlist/save/(:segment)', 'User\Wishlist::save/$1', ['filter' => 'auth']);
+$routes->get('/user/wishlist', 'User\Wishlist::show', ['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------
