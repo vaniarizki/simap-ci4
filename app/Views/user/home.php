@@ -32,7 +32,7 @@
             <a href="/kategori/<?= $k['nama']; ?>">
               <div class="box-img">
                 <h4><?= $k['nama']; ?></h4>
-                <img src="/img/product/<?= $k['gambar']; ?>" alt="" />
+                <img src="/img/kategori/<?= $k['gambar']; ?>" alt="" />
               </div>
             </a>
           </div>
@@ -51,7 +51,7 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <img src="/img/jual.png" class="icon-small" alt="">
-            <a href="jual.php">
+            <a href="/user/jual">
               <h4>Jualin Barang</h4>
             </a>
             <p>Dengan SIMAP kamu bisa jualin barang-barang kamu ke mahasiswa lain dengan cepat.</p>
@@ -62,7 +62,7 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <img src="/img/hibah.png" class="icon-small" alt="">
-            <a href="hibah.php">
+            <a href="/user/hibah">
               <h4>Hibahin Barang</h4>
             </a>
             <p>Dengan SIMAP kamu bisa hibahin barang-barang kamu ke mahasiswa lain dengan tepat.</p>
@@ -73,7 +73,7 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <img src="/img/sewa.png" class="icon-small" alt="">
-            <a href="sewa.php">
+            <a href="/user/sewa">
               <h4>Sewain Barang</h4>
             </a>
             <p>Dengan SIMAP kamu bisa sewain barang-barang kamu ke mahasiswa lain dengan mudah.</p>

@@ -26,4 +26,33 @@ class Profil extends Controller
 
     return view('/user/profil', $data);
   }
+
+  public function update()
+  {
+    $session = session();
+    $nim = $session->get('nim');
+    $fileFoto = $this->request->getFile('file');
+
+    // pindah file ke folder img
+    $fileFoto->move('img/profil');
+
+    // ambil nama file
+    $namaFoto = $fileFoto->getName();
+
+    $data = [
+      'foto' => $namaFoto,
+      'nama' => $this->request->getVar('nama'),
+      'kelas' => $this->request->getVar('kelas'),
+      'alamat' => $this->request->getVar('alamat'),
+      'password' => $this->request->getVar('password'),
+    ];
+
+    $update = $this->userModel->updateUser($nim, $data);
+
+    if ($update) {
+      return redirect()->to('/user/profil');
+    } else {
+      return 'gagal update';
+    }
+  }
 }

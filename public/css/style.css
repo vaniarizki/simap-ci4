@@ -152,7 +152,7 @@ header .navbar-default .navbar-header {
   background: none;
   border: none;
   box-shadow: none;
-  background-image: url("../images/search-icon.png");
+  background-image: url("/img/search-icon.png");
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 30px;
@@ -437,7 +437,7 @@ header .navbar-default .navbar-header {
 
 .main-product {
   background-color: #09284b;
-  background-image: url("../images/bg_main.png");
+  background-image: url("/img/bg_main.png");
   padding-bottom: 180px;
   background-position: center center;
 }
@@ -1049,7 +1049,7 @@ header .navbar-default .navbar-header {
 -------------------------------------------------------------*/
 
 .main-footer {
-  background-image: url("../images/footer_bg.png");
+  background-image: url("/img/footer_bg.png");
   padding: 55px 0px 0px 0px;
   background-size: cover;
   background-position: center center;
@@ -1589,7 +1589,7 @@ header .navbar-default .navbar-header {
   transition-duration: 0.3s;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: url(../images/plus-icon.png) center no-repeat;
+  background: url(/img/plus-icon.png) center no-repeat;
 }
 
 .panel-title > a.collapsed:before {
@@ -1672,7 +1672,7 @@ header .navbar-default .navbar-header {
   top: 0;
   left: 0;
   height: 100%;
-  background: url(../images/map.png) center no-repeat;
+  background: url(/img/map.png) center no-repeat;
 }
 
 .main-template-about h1 {
@@ -1984,7 +1984,7 @@ header .navbar-default .navbar-header {
   top: 9%;
   left: 0;
   height: 561px;
-  background: url(../images/map.png) center no-repeat;
+  background: url(/img/map.png) center no-repeat;
 }
 
 .cooming-logo {
@@ -3583,6 +3583,16 @@ html .ui-button.ui-state-disabled:active {
   margin-left: 10vw;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
@@ -3646,16 +3656,18 @@ input[type="reset"]:active {
   transform: scale(0.95);
 }
 
-input[type="text"] {
+input[type="text"],
+select,
+textarea {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
   padding: 15px 32px;
-  margin: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 5px;
   width: 85%;
   border: 2px solid #f6f6f6;
   -webkit-transition: all 0.5s ease-in-out;
@@ -3667,7 +3679,9 @@ input[type="text"] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+select,
+textarea {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
@@ -3696,6 +3710,17 @@ input[type="password"] {
 input[type="password"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
+}
+
+input[type="text"]:focus,
+select,
+textarea {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type="file"] {
+  display: none;
 }
 
 .fadeInDown {
@@ -3797,6 +3822,24 @@ input[type="password"]:focus {
   animation-delay: 1s;
 }
 
+.fadeIn.fiveth {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.fadeIn.sixth {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.fadeIn.seventh {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
 .underlineHover:after {
   display: block;
   left: 0;
@@ -3814,4 +3857,96 @@ input[type="password"]:focus {
 
 .underlineHover:hover:after {
   width: 100%;
+}
+
+.css-kmq1n0 {
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: center;
+  place-content: center;
+  width: inherit;
+  height: inherit;
+  -moz-box-align: center;
+  align-items: center;
+}
+.css-s027nm {
+  box-sizing: border-box;
+  box-shadow: rgba(49, 53, 59, 0.12) 0px 1px 6px;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-right: 12px;
+  background: rgb(243, 244, 245) none repeat scroll 0% 0%;
+  width: 170px;
+  height: 170px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.css-1pp9iaz {
+  background-image: url("/img/upload.png");
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.css-17t9ldh {
+  padding-top: 12px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 20px;
+  color: rgba(49, 53, 59, 0.32);
+}
+.css-j7qwjs {
+  display: flex;
+  flex-direction: column;
+}
+.css-1k9ilcv {
+  display: flex;
+  min-height: 128px;
+  -moz-box-pack: center;
+  justify-content: center;
+  margin: 14px 48px 48px;
+}
+
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #0f8c3b;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after {
+  width: 100%;
+}
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #0f8c3b;
+}
+
+#imagePreview,
+#imagePreview1,
+#imagePreview2 {
+  cursor: pointer;
+}
+
+a {
+  color: #92badd;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
 }

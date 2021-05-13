@@ -88,7 +88,7 @@
                 <div class="col-md-6 col-sm-6" style="padding-top: 15px;">
                   <div class="small-box-c">
                     <div class="small-img-b">
-                      <img src="/img/<?= $b['gambar_1']; ?>" alt="#" />
+                      <img src="/img/barang/<?= $b['gambar_1']; ?>" alt="#" />
                     </div>
                     <div class="dit-t clearfix">
                       <div class="left-ti">
@@ -126,7 +126,7 @@
             <div class="right-list-f">
               <ul>
                 <?php foreach ($kategori as $k) : ?>
-                  <li><a href="/kategori/<?= $k['nama']; ?>"><img width="32" src="/img/product/<?= $k['gambar']; ?>" alt="#" /><?= $k['nama']; ?></a></li>
+                  <li><a href="/kategori/<?= $k['nama']; ?>"><img width="32" src="/img/kategori/<?= $k['gambar']; ?>" alt="#" /><?= $k['nama']; ?></a></li>
                 <?php endforeach; ?>
               </ul>
             </div>
@@ -159,6 +159,7 @@
 <script src="/js/wow.min.js"></script>
 <!--custom js-->
 <script src="/js/custom.js"></script>
+<script src="/js/ajax.js"></script>
 <script>
   $(function() {
     $("#slider-range").slider({

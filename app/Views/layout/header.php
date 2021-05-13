@@ -14,7 +14,7 @@
             <a href="/user/home" class="navbar-brand">SIMAP</a>
           </div>
           <form action="jual.php" method="post" class="navbar-form navbar-left web-sh">
-            <div style="background-image: url('../img/search-icon.png'); background-repeat: no-repeat;background-position: left;" class="form">
+            <div style="background-repeat: no-repeat;background-position: left;" class="form">
               <input type="text" class="form-control" placeholder="Pencarian...">
             </div>
           </form>

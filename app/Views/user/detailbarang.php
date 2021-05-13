@@ -18,7 +18,7 @@
          <div class="col-md-2 col-sm-4">
             <div class="left-profile-box-m prod-page">
                <div class="pro-img">
-                  <img src="images/150x150.png" alt="#" />
+                  <img src="/img/profil/<?= $fotoPenjual; ?>" alt="#" />
                </div>
                <div class="pof-text">
                   <h3><?= $penjual; ?></h3>
@@ -33,12 +33,12 @@
                   <div class="page-preview">
                      <div class="preview">
                         <div class="preview-pic tab-content">
-                           <div class="tab-pane active" id="pic-1"><img src="/img/<?= $barang['gambar_1']; ?>" alt="#" /></div>
-                           <div class="tab-pane" id="pic-2"><img src="/img/<?= $barang['gambar_2']; ?>" alt="#" /></div>
+                           <div class="tab-pane active" id="pic-1"><img src="/img/barang/<?= $barang['gambar_1']; ?>" alt="#" /></div>
+                           <div class="tab-pane" id="pic-2"><img src="/img/barang/<?= $barang['gambar_2']; ?>" alt="#" /></div>
                         </div>
                         <ul class="preview-thumbnail nav nav-tabs">
-                           <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/img/<?= $barang['gambar_1']; ?>" alt="#" /></a></li>
-                           <li><a data-target="#pic-2" data-toggle="tab"><img src="/img/<?= $barang['gambar_2']; ?>" alt="#" /></a></li>
+                           <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/img/barang/<?= $barang['gambar_1']; ?>" alt="#" /></a></li>
+                           <li><a data-target="#pic-2" data-toggle="tab"><img src="/img/barang/<?= $barang['gambar_2']; ?>" alt="#" /></a></li>
                         </ul>
                      </div>
                   </div>
@@ -241,31 +241,6 @@
             <div class="price-box-right">
                <h4>Harga</h4>
                <h3><?= $barang['harga']; ?></h3>
-               <p>Option</p>
-               <select class="form-control select2">
-                  <option>Flying Carpet Green rug</option>
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="CA">California</option>
-                  <option value="NV">Nevada</option>
-                  <option value="OR">Oregon</option>
-                  <option value="WA">Washington</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="CO">Colorado</option>
-                  <option value="ID">Idaho</option>
-                  <option value="MT">Montana</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="UT">Utah</option>
-                  <option value="WY">Wyoming</option>
-                  <option value="AL">Alabama</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IA">Iowa</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-               </select>
                <a href="#">Hubungi Penjual</a>
             </div>
          </div>

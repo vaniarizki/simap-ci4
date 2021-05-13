@@ -47,6 +47,7 @@ class Barang extends Controller
       'kategori' => $this->kategoriModel->getKategori(),
       'barang' => $barang[0],
       'penjual' => $penjual[0]['nama'],
+      'fotoPenjual' => $penjual[0]['foto'],
       'nim' => $session->get('nim'),
       'nama' => $session->get('nama'),
     ];

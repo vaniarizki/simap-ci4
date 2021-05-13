@@ -37,6 +37,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     -->
+
+  <!--main js-->
+  <script src="/js/jquery-1.12.4.min.js"></script>
+  <!--bootstrap js-->
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap-select.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/select2.full.min.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <!--custom js-->
+  <script src="/js/custom.js"></script>
 </body>
 
 </html>

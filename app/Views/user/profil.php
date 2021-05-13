@@ -28,7 +28,7 @@
         }
       }
     </script>
-    <form method="post" enctype="multipart/form-data">
+    <form action="/user/profil/update" method="post" enctype="multipart/form-data">
       <h4>Edit Profil Pengguna</h4>
       <?php foreach ($user as $user) : ?>
         <div id="imageSection" onclick="open_file();">
@@ -39,7 +39,7 @@
                 <?php
                 if (isset($user['foto'])) {
                 ?>
-                  <img style="border-radius: 8px;" width="180" height="180" src="<?php echo "images/" . $user['foto'] ?>">
+                  <img style="border-radius: 8px;" width="180" height="180" src="<?= "/img/profil/" . $user['foto'] ?>">
                 <?php } else { ?>
                   <div class="css-kmq1n0" data-testid="imgAEPImgUploader">
                     <div class="css-1pp9iaz"></div>
@@ -50,12 +50,12 @@
             </div>
           </div>
         </div>
-        <td><input type="text" id="nim" class="fadeIn first" name="nim" value="<?php echo $user['nim'] ?>" readonly="readonly"></td>
-        <td><input type="text" id="nama" class="fadeIn second" name="nama" value="<?php echo $user['nama'] ?>" required></td>
-        <td><input type="text" id="kelas" class="fadeIn third" placeholder="kelas" name="kelas" value="<?php echo $user['kelas'] ?>"></td>
-        <td><input type="text" id="email" class="fadeIn fourth" name="email" value="<?php echo $user['email'] ?>" readonly="readonly"></td>
-        <td><textarea id="alamat" class="fadeIn fiveth" placeholder="alamat" name="alamat" cols="40" rows="5"><?php echo $user['alamat'] ?></textarea></td>
-        <input type="password" id="password" class="fadeIn sixth" name="password" value="<?php echo $user['password'] ?>" required><br>
+        <td><input type="text" id="nim" class="fadeIn first" name="nim" value="<?= $user['nim'] ?>" readonly="readonly"></td>
+        <td><input type="text" id="nama" class="fadeIn second" name="nama" value="<?= $user['nama'] ?>" required></td>
+        <td><input type="text" id="kelas" class="fadeIn third" placeholder="kelas" name="kelas" value="<?= $user['kelas'] ?>"></td>
+        <td><input type="text" id="email" class="fadeIn fourth" name="email" value="<?= $user['email'] ?>" readonly="readonly"></td>
+        <td><textarea id="alamat" class="fadeIn fiveth" placeholder="alamat" name="alamat" cols="40" rows="5"><?= $user['alamat'] ?></textarea></td>
+        <input type="password" id="password" class="fadeIn sixth" name="password" value="<?= $user['password'] ?>" required><br>
         <input type="checkbox" class="fadeIn sixth" onclick="myFunction()"><i class="fadeIn sixth">Show Password</i><br>
         <td><input type="submit" name="submit" class="fadeIn seventh" value="Simpan"></td>
       <?php endforeach; ?>

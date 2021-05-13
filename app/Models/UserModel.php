@@ -19,4 +19,10 @@ class UserModel extends Model
             return $query;
         }
     }
+
+    public function updateUser($nim, $data)
+    {
+        $query = $this->db->table($this->table)->update($data, ['nim' => $nim]);
+        return $query;
+    }
 }
