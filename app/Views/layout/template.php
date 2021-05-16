@@ -20,6 +20,9 @@
   <!--responsive css-->
   <link rel="stylesheet" href="/css/responsive.css">
 
+  <!--main js-->
+  <script src="/js/jquery-1.12.4.min.js"></script>
+
   <link rel="shortcut icon" href="/img/simap.png" type="image/x-icon">
   <title><?= $title; ?></title>
 </head>
@@ -38,8 +41,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     -->
 
-  <!--main js-->
-  <script src="/js/jquery-1.12.4.min.js"></script>
   <!--bootstrap js-->
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap-select.min.js"></script>

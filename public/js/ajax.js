@@ -13,4 +13,25 @@ keyword.addEventListener('keyup', function(){
 	
 });
 
-	
+  function Wishlist(id, bool) {
+    var xhttp = new XMLHttpRequest();
+		
+    if (bool) {
+      xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById(id).classList.remove("active");
+				}
+			};
+			xhttp.open("DELETE", "/user/wishlist/delete/" + id, true);
+			xhttp.send();
+    } else {
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById(id).classList.add("active");
+				}
+			};
+			xhttp.open("POST", "/user/wishlist/save/" + id, true);
+			xhttp.send();
+    }
+    
+  }

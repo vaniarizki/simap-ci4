@@ -35,7 +35,6 @@ class Wishlist extends Controller
         'status' => 200,
         'message' => ''
       ];
-      return;
     }
   }
 
@@ -54,6 +53,21 @@ class Wishlist extends Controller
       'nama' => $session->get('nama'),
     ];
 
-    return view('/user/barang', $data);
+    return view('/user/wishlist', $data);
+  }
+
+  public function delete($id_barang)
+  {
+    $session = session();
+
+    $nim = $session->get('nim');
+    $delete = $this->wishlistModel->deleteWishlist($nim, $id_barang);
+
+    if ($delete) {
+      $output = [
+        'status' => 200,
+        'message' => ''
+      ];
+    }
   }
 }

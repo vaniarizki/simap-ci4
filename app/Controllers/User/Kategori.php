@@ -29,7 +29,7 @@ class Kategori extends Controller
       'nama' => $session->get('nama'),
     ];
 
-    return view('/user/kategori', $data);
+    return view('/user/barang', $data);
   }
 
   public function kategori($kategori)

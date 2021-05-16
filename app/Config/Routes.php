@@ -39,9 +39,11 @@ $routes->get('/user/barangsaya', 'User\Barang::barangsaya', ['filter' => 'auth']
 $routes->get('/user/barang/(:segment)', 'User\Barang::detail/$1', ['filter' => 'auth']);
 $routes->get('/kategori/(:segment)', 'User\Kategori::kategori/$1', ['filter' => 'auth']);
 $routes->post('/user/wishlist/save/(:segment)', 'User\Wishlist::save/$1', ['filter' => 'auth']);
+$routes->delete('/user/wishlist/delete/(:segment)', 'User\Wishlist::delete/$1', ['filter' => 'auth']);
 $routes->get('/user/wishlist', 'User\Wishlist::show', ['filter' => 'auth']);
 $routes->get('/user/sewa', 'User\Sewa::index', ['filter' => 'auth']);
 $routes->get('/user/sewa/upload', 'User\Sewa::upload', ['filter' => 'auth']);
+
 
 /*
  * --------------------------------------------------------------------

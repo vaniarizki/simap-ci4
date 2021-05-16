@@ -26,4 +26,15 @@ class WishlistModel extends Model
     $query = $this->table($this->table)->findAll();
     return $query;
   }
+
+  public function deleteWishlist($nim_user, $id_barang)
+  {
+    $data = [
+      'nim_user' => $nim_user,
+      'id_barang' => $id_barang
+    ];
+
+    $query = $this->db->table($this->table)->delete($data);
+    return $query;
+  }
 }

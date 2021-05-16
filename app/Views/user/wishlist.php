@@ -81,11 +81,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-9 col-sm-8 page">
           <div class="furniture-middle">
             <div class="row cat-pd">
               <?php foreach ($barang as $b) : ?>
-                <div class="col-md-6 col-sm-6" style="padding-top: 15px;">
+                <div class="col-md-4 col-sm-6" style="padding-top: 15px;">
                   <div class="small-box-c">
                     <div class="small-img-b">
                       <img src="/img/barang/<?= $b['gambar_1']; ?>" alt="#" />
@@ -127,18 +127,6 @@
                   </div>
                 </div>
               <?php endforeach; ?>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 hidden-xs">
-          <div class="furniture-right">
-            <h3>Kategori</h3>
-            <div class="right-list-f">
-              <ul>
-                <?php foreach ($kategori as $k) : ?>
-                  <li><a href="/kategori/<?= $k['nama']; ?>"><img width="32" src="/img/kategori/<?= $k['gambar']; ?>" alt="#" /><?= $k['nama']; ?></a></li>
-                <?php endforeach; ?>
-              </ul>
             </div>
           </div>
         </div>

@@ -3950,3 +3950,7 @@ a {
   text-decoration: none;
   font-weight: 400;
 }
+
+.wishlist.active {
+  color: red;
+}
